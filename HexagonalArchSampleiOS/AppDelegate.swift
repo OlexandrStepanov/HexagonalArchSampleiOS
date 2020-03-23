@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,6 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        #warning("Don't foget to add GoogleService-Info.plist with Firebase configuration to your project")
+        FirebaseApp.configure()
         
         let window = UIWindow()
         window.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()

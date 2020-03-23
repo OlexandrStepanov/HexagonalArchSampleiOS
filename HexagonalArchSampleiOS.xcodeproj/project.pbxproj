@@ -3,10 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		48E17EC72428AC3B0096778C /* HeartRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17EC62428AC3B0096778C /* HeartRateService.swift */; };
+		48E17EC92428AC6F0096778C /* StoragePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17EC82428AC6F0096778C /* StoragePort.swift */; };
+		48E17ECB2428AC870096778C /* StorageAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17ECA2428AC870096778C /* StorageAdapter.swift */; };
+		48E17ECD2428ACF20096778C /* BluetoothPort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17ECC2428ACF20096778C /* BluetoothPort.swift */; };
+		48E17ECF2428ACFE0096778C /* BluetoothAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17ECE2428ACFE0096778C /* BluetoothAdapter.swift */; };
+		48E17ED22428B36B0096778C /* HeartRateRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17ED12428B36B0096778C /* HeartRateRecord.swift */; };
+		819AFD7122791A3FBB5AAD88 /* Pods_HexagonalArchSampleiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1EE742525A3FD11170BAE1F /* Pods_HexagonalArchSampleiOS.framework */; };
+		8CDD3A9F2DCF1391115CC041 /* Pods_HexagonalArchSampleiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E4F918E798E49DC2A7C33F /* Pods_HexagonalArchSampleiOSTests.framework */; };
 		A9C164F123E4DA30000DE878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C164F023E4DA30000DE878 /* AppDelegate.swift */; };
 		A9C164F523E4DA30000DE878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C164F423E4DA30000DE878 /* ViewController.swift */; };
 		A9C164F823E4DA30000DE878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C164F623E4DA30000DE878 /* Main.storyboard */; };
@@ -26,6 +34,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2E0B191B5425BBCC316E1100 /* Pods-HexagonalArchSampleiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexagonalArchSampleiOS.release.xcconfig"; path = "Target Support Files/Pods-HexagonalArchSampleiOS/Pods-HexagonalArchSampleiOS.release.xcconfig"; sourceTree = "<group>"; };
+		48E17EC62428AC3B0096778C /* HeartRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateService.swift; sourceTree = "<group>"; };
+		48E17EC82428AC6F0096778C /* StoragePort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePort.swift; sourceTree = "<group>"; };
+		48E17ECA2428AC870096778C /* StorageAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAdapter.swift; sourceTree = "<group>"; };
+		48E17ECC2428ACF20096778C /* BluetoothPort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPort.swift; sourceTree = "<group>"; };
+		48E17ECE2428ACFE0096778C /* BluetoothAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothAdapter.swift; sourceTree = "<group>"; };
+		48E17ED12428B36B0096778C /* HeartRateRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateRecord.swift; sourceTree = "<group>"; };
+		65AF00483675FA84EF0AB2DB /* Pods-HexagonalArchSampleiOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexagonalArchSampleiOSTests.release.xcconfig"; path = "Target Support Files/Pods-HexagonalArchSampleiOSTests/Pods-HexagonalArchSampleiOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7C5A7C913C271B61FEB0078F /* Pods-HexagonalArchSampleiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexagonalArchSampleiOS.debug.xcconfig"; path = "Target Support Files/Pods-HexagonalArchSampleiOS/Pods-HexagonalArchSampleiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8ECAD64BCCCF4351BEB90DDF /* Pods-HexagonalArchSampleiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexagonalArchSampleiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-HexagonalArchSampleiOSTests/Pods-HexagonalArchSampleiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9C164ED23E4DA30000DE878 /* HexagonalArchSampleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexagonalArchSampleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C164F023E4DA30000DE878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9C164F423E4DA30000DE878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +54,8 @@
 		A9C1650323E4DA33000DE878 /* HexagonalArchSampleiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HexagonalArchSampleiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C1650723E4DA33000DE878 /* HexagonalArchSampleiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonalArchSampleiOSTests.swift; sourceTree = "<group>"; };
 		A9C1650923E4DA33000DE878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1EE742525A3FD11170BAE1F /* Pods_HexagonalArchSampleiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexagonalArchSampleiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8E4F918E798E49DC2A7C33F /* Pods_HexagonalArchSampleiOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HexagonalArchSampleiOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				819AFD7122791A3FBB5AAD88 /* Pods_HexagonalArchSampleiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,18 +71,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CDD3A9F2DCF1391115CC041 /* Pods_HexagonalArchSampleiOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B4599168D3ECAF509919E9D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1EE742525A3FD11170BAE1F /* Pods_HexagonalArchSampleiOS.framework */,
+				D8E4F918E798E49DC2A7C33F /* Pods_HexagonalArchSampleiOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48E17ED02428B2BD0096778C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48E17ED12428B36B0096778C /* HeartRateRecord.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A9C164E423E4DA30000DE878 = {
 			isa = PBXGroup;
 			children = (
 				A9C164EF23E4DA30000DE878 /* HexagonalArchSampleiOS */,
 				A9C1650623E4DA33000DE878 /* HexagonalArchSampleiOSTests */,
 				A9C164EE23E4DA30000DE878 /* Products */,
+				AEFC534F801305DA22D1ECA5 /* Pods */,
+				1B4599168D3ECAF509919E9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,10 +118,11 @@
 		A9C164EF23E4DA30000DE878 /* HexagonalArchSampleiOS */ = {
 			isa = PBXGroup;
 			children = (
+				A9C164F023E4DA30000DE878 /* AppDelegate.swift */,
+				48E17ED02428B2BD0096778C /* Models */,
 				A9C1651423E4DCF6000DE878 /* Adapters */,
 				A9C1651323E4DCF0000DE878 /* Ports */,
 				A9C1651223E4DCE5000DE878 /* Domain */,
-				A9C164F023E4DA30000DE878 /* AppDelegate.swift */,
 				A9C164F423E4DA30000DE878 /* ViewController.swift */,
 				A9C164F623E4DA30000DE878 /* Main.storyboard */,
 				A9C164F923E4DA33000DE878 /* Assets.xcassets */,
@@ -102,6 +144,7 @@
 		A9C1651223E4DCE5000DE878 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				48E17EC62428AC3B0096778C /* HeartRateService.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -109,6 +152,8 @@
 		A9C1651323E4DCF0000DE878 /* Ports */ = {
 			isa = PBXGroup;
 			children = (
+				48E17EC82428AC6F0096778C /* StoragePort.swift */,
+				48E17ECC2428ACF20096778C /* BluetoothPort.swift */,
 			);
 			path = Ports;
 			sourceTree = "<group>";
@@ -116,8 +161,21 @@
 		A9C1651423E4DCF6000DE878 /* Adapters */ = {
 			isa = PBXGroup;
 			children = (
+				48E17ECA2428AC870096778C /* StorageAdapter.swift */,
+				48E17ECE2428ACFE0096778C /* BluetoothAdapter.swift */,
 			);
 			path = Adapters;
+			sourceTree = "<group>";
+		};
+		AEFC534F801305DA22D1ECA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C5A7C913C271B61FEB0078F /* Pods-HexagonalArchSampleiOS.debug.xcconfig */,
+				2E0B191B5425BBCC316E1100 /* Pods-HexagonalArchSampleiOS.release.xcconfig */,
+				8ECAD64BCCCF4351BEB90DDF /* Pods-HexagonalArchSampleiOSTests.debug.xcconfig */,
+				65AF00483675FA84EF0AB2DB /* Pods-HexagonalArchSampleiOSTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,9 +185,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9C1650C23E4DA33000DE878 /* Build configuration list for PBXNativeTarget "HexagonalArchSampleiOS" */;
 			buildPhases = (
+				65FEE4474C639D29A20153FA /* [CP] Check Pods Manifest.lock */,
 				A9C164E923E4DA30000DE878 /* Sources */,
 				A9C164EA23E4DA30000DE878 /* Frameworks */,
 				A9C164EB23E4DA30000DE878 /* Resources */,
+				6446EA4B2C7C13BC6DC7EBCE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -144,6 +204,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9C1650F23E4DA33000DE878 /* Build configuration list for PBXNativeTarget "HexagonalArchSampleiOSTests" */;
 			buildPhases = (
+				650B556FBF531169BA283F5F /* [CP] Check Pods Manifest.lock */,
 				A9C164FF23E4DA33000DE878 /* Sources */,
 				A9C1650023E4DA33000DE878 /* Frameworks */,
 				A9C1650123E4DA33000DE878 /* Resources */,
@@ -216,13 +277,83 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6446EA4B2C7C13BC6DC7EBCE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HexagonalArchSampleiOS/Pods-HexagonalArchSampleiOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HexagonalArchSampleiOS/Pods-HexagonalArchSampleiOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HexagonalArchSampleiOS/Pods-HexagonalArchSampleiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		650B556FBF531169BA283F5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HexagonalArchSampleiOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		65FEE4474C639D29A20153FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HexagonalArchSampleiOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A9C164E923E4DA30000DE878 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A9C164F523E4DA30000DE878 /* ViewController.swift in Sources */,
+				48E17ECF2428ACFE0096778C /* BluetoothAdapter.swift in Sources */,
+				48E17EC72428AC3B0096778C /* HeartRateService.swift in Sources */,
+				48E17EC92428AC6F0096778C /* StoragePort.swift in Sources */,
+				48E17ECD2428ACF20096778C /* BluetoothPort.swift in Sources */,
 				A9C164F123E4DA30000DE878 /* AppDelegate.swift in Sources */,
+				48E17ECB2428AC870096778C /* StorageAdapter.swift in Sources */,
+				48E17ED22428B36B0096778C /* HeartRateRecord.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +511,7 @@
 		};
 		A9C1650D23E4DA33000DE878 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C5A7C913C271B61FEB0078F /* Pods-HexagonalArchSampleiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,6 +529,7 @@
 		};
 		A9C1650E23E4DA33000DE878 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0B191B5425BBCC316E1100 /* Pods-HexagonalArchSampleiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -414,6 +547,7 @@
 		};
 		A9C1651023E4DA33000DE878 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8ECAD64BCCCF4351BEB90DDF /* Pods-HexagonalArchSampleiOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -435,6 +569,7 @@
 		};
 		A9C1651123E4DA33000DE878 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65AF00483675FA84EF0AB2DB /* Pods-HexagonalArchSampleiOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
