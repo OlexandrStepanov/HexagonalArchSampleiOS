@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4848395D242BF690006C5037 /* HeartRatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848395C242BF690006C5037 /* HeartRatePresenter.swift */; };
 		48E17EC72428AC3B0096778C /* HeartRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17EC62428AC3B0096778C /* HeartRateService.swift */; };
 		48E17EC92428AC6F0096778C /* StoragePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17EC82428AC6F0096778C /* StoragePort.swift */; };
 		48E17ECB2428AC870096778C /* StorageAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17ECA2428AC870096778C /* StorageAdapter.swift */; };
@@ -16,7 +17,7 @@
 		819AFD7122791A3FBB5AAD88 /* Pods_HexagonalArchSampleiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1EE742525A3FD11170BAE1F /* Pods_HexagonalArchSampleiOS.framework */; };
 		8CDD3A9F2DCF1391115CC041 /* Pods_HexagonalArchSampleiOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8E4F918E798E49DC2A7C33F /* Pods_HexagonalArchSampleiOSTests.framework */; };
 		A9C164F123E4DA30000DE878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C164F023E4DA30000DE878 /* AppDelegate.swift */; };
-		A9C164F523E4DA30000DE878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C164F423E4DA30000DE878 /* ViewController.swift */; };
+		A9C164F523E4DA30000DE878 /* HeartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C164F423E4DA30000DE878 /* HeartRateViewController.swift */; };
 		A9C164F823E4DA30000DE878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C164F623E4DA30000DE878 /* Main.storyboard */; };
 		A9C164FA23E4DA33000DE878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9C164F923E4DA33000DE878 /* Assets.xcassets */; };
 		A9C164FD23E4DA33000DE878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C164FB23E4DA33000DE878 /* LaunchScreen.storyboard */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		2E0B191B5425BBCC316E1100 /* Pods-HexagonalArchSampleiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexagonalArchSampleiOS.release.xcconfig"; path = "Target Support Files/Pods-HexagonalArchSampleiOS/Pods-HexagonalArchSampleiOS.release.xcconfig"; sourceTree = "<group>"; };
+		4848395C242BF690006C5037 /* HeartRatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRatePresenter.swift; sourceTree = "<group>"; };
 		48E17EC62428AC3B0096778C /* HeartRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateService.swift; sourceTree = "<group>"; };
 		48E17EC82428AC6F0096778C /* StoragePort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePort.swift; sourceTree = "<group>"; };
 		48E17ECA2428AC870096778C /* StorageAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAdapter.swift; sourceTree = "<group>"; };
@@ -46,7 +48,7 @@
 		8ECAD64BCCCF4351BEB90DDF /* Pods-HexagonalArchSampleiOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexagonalArchSampleiOSTests.debug.xcconfig"; path = "Target Support Files/Pods-HexagonalArchSampleiOSTests/Pods-HexagonalArchSampleiOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9C164ED23E4DA30000DE878 /* HexagonalArchSampleiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexagonalArchSampleiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C164F023E4DA30000DE878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9C164F423E4DA30000DE878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9C164F423E4DA30000DE878 /* HeartRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewController.swift; sourceTree = "<group>"; };
 		A9C164F723E4DA30000DE878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9C164F923E4DA33000DE878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9C164FC23E4DA33000DE878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +89,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4848395A242BF64C006C5037 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A9C164F423E4DA30000DE878 /* HeartRateViewController.swift */,
+				4848395C242BF690006C5037 /* HeartRatePresenter.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4848395B242BF655006C5037 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9C164F623E4DA30000DE878 /* Main.storyboard */,
+				A9C164F923E4DA33000DE878 /* Assets.xcassets */,
+				A9C164FB23E4DA33000DE878 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		48E17ED02428B2BD0096778C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,10 +144,8 @@
 				A9C1651423E4DCF6000DE878 /* Adapters */,
 				A9C1651323E4DCF0000DE878 /* Ports */,
 				A9C1651223E4DCE5000DE878 /* Domain */,
-				A9C164F423E4DA30000DE878 /* ViewController.swift */,
-				A9C164F623E4DA30000DE878 /* Main.storyboard */,
-				A9C164F923E4DA33000DE878 /* Assets.xcassets */,
-				A9C164FB23E4DA33000DE878 /* LaunchScreen.storyboard */,
+				4848395A242BF64C006C5037 /* UI */,
+				4848395B242BF655006C5037 /* Resources */,
 				A9C164FE23E4DA33000DE878 /* Info.plist */,
 			);
 			path = HexagonalArchSampleiOS;
@@ -346,7 +365,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9C164F523E4DA30000DE878 /* ViewController.swift in Sources */,
+				A9C164F523E4DA30000DE878 /* HeartRateViewController.swift in Sources */,
 				48E17ECF2428ACFE0096778C /* BluetoothAdapter.swift in Sources */,
 				48E17EC72428AC3B0096778C /* HeartRateService.swift in Sources */,
 				48E17EC92428AC6F0096778C /* StoragePort.swift in Sources */,
@@ -354,6 +373,7 @@
 				A9C164F123E4DA30000DE878 /* AppDelegate.swift in Sources */,
 				48E17ECB2428AC870096778C /* StorageAdapter.swift in Sources */,
 				48E17ED22428B36B0096778C /* HeartRateRecord.swift in Sources */,
+				4848395D242BF690006C5037 /* HeartRatePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

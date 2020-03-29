@@ -45,13 +45,12 @@ class HeartRateService: HeartRateServiceProtocol, BluetoothPortDelegate {
     private var bluetoothPort: BluetoothPort
     private let storagePort: StoragePort
     
-    init() {
+    init(bluetoothPort: BluetoothPort, storagePort: StoragePort) {
+        self.bluetoothPort = bluetoothPort
+        self.storagePort = storagePort
+        
         state = .disabled
-        
-        bluetoothPort = BluetoothAdapter()
-        storagePort = StorageAdapter()
-        
-        bluetoothPort.delegate = self
+        self.bluetoothPort.delegate = self
     }
     
     func startSyncing() -> Result<Void, Error> {
