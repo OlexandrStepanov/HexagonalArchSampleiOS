@@ -8,6 +8,9 @@ target 'HexagonalArchSampleiOS' do
   # Pods for HexagonalArchSampleiOS
   pod 'Firebase/Firestore'
 
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+
   target 'HexagonalArchSampleiOSTests' do
     inherit! :search_paths
     # Pods for testing

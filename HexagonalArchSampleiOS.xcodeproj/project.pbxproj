@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4848395D242BF690006C5037 /* HeartRatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4848395C242BF690006C5037 /* HeartRatePresenter.swift */; };
+		4808AEBF24321017007CB01E /* HeartRateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4808AEBE24321017007CB01E /* HeartRateViewModel.swift */; };
 		48E17EC72428AC3B0096778C /* HeartRateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17EC62428AC3B0096778C /* HeartRateService.swift */; };
 		48E17EC92428AC6F0096778C /* StoragePort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17EC82428AC6F0096778C /* StoragePort.swift */; };
 		48E17ECB2428AC870096778C /* StorageAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E17ECA2428AC870096778C /* StorageAdapter.swift */; };
@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		2E0B191B5425BBCC316E1100 /* Pods-HexagonalArchSampleiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HexagonalArchSampleiOS.release.xcconfig"; path = "Target Support Files/Pods-HexagonalArchSampleiOS/Pods-HexagonalArchSampleiOS.release.xcconfig"; sourceTree = "<group>"; };
-		4848395C242BF690006C5037 /* HeartRatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRatePresenter.swift; sourceTree = "<group>"; };
+		4808AEBE24321017007CB01E /* HeartRateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewModel.swift; sourceTree = "<group>"; };
 		48E17EC62428AC3B0096778C /* HeartRateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateService.swift; sourceTree = "<group>"; };
 		48E17EC82428AC6F0096778C /* StoragePort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoragePort.swift; sourceTree = "<group>"; };
 		48E17ECA2428AC870096778C /* StorageAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageAdapter.swift; sourceTree = "<group>"; };
@@ -93,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				A9C164F423E4DA30000DE878 /* HeartRateViewController.swift */,
-				4848395C242BF690006C5037 /* HeartRatePresenter.swift */,
+				4808AEBE24321017007CB01E /* HeartRateViewModel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -366,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9C164F523E4DA30000DE878 /* HeartRateViewController.swift in Sources */,
+				4808AEBF24321017007CB01E /* HeartRateViewModel.swift in Sources */,
 				48E17ECF2428ACFE0096778C /* BluetoothAdapter.swift in Sources */,
 				48E17EC72428AC3B0096778C /* HeartRateService.swift in Sources */,
 				48E17EC92428AC6F0096778C /* StoragePort.swift in Sources */,
@@ -373,7 +374,6 @@
 				A9C164F123E4DA30000DE878 /* AppDelegate.swift in Sources */,
 				48E17ECB2428AC870096778C /* StorageAdapter.swift in Sources */,
 				48E17ED22428B36B0096778C /* HeartRateRecord.swift in Sources */,
-				4848395D242BF690006C5037 /* HeartRatePresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

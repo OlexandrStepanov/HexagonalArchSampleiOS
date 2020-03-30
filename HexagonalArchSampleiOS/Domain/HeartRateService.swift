@@ -7,18 +7,15 @@
 //
 
 import Foundation
+import RxSwift
+import RxRelay
 
 protocol HeartRateServiceProtocol {
-    var state: HeartRateService.State { get }
-    var delegate: HeartRateServiceDelegate? { get set }
+    var state: BehaviorRelay<HeartRateService.State> { get }
+    var heartRate: PublishSubject<HeartRateRecord> { get }
     
     func startSyncing() -> Result<Void, HeartRateService.Error>
     func stopSyncing()
-}
-
-protocol HeartRateServiceDelegate {
-    func stateDidChange(to newState: HeartRateService.State)
-    func hasRecorded(record: HeartRateRecord)
 }
 
 class HeartRateService: HeartRateServiceProtocol, BluetoothPortDelegate {
@@ -35,12 +32,8 @@ class HeartRateService: HeartRateServiceProtocol, BluetoothPortDelegate {
         case bluetoothIsDisabled
     }
     
-    private(set) var state: State {
-        didSet {
-            self.delegate?.stateDidChange(to: state)
-        }
-    }
-    var delegate: HeartRateServiceDelegate?
+    let state: BehaviorRelay<State>
+    let heartRate = PublishSubject<HeartRateRecord>()
     
     private var bluetoothPort: BluetoothPort
     private let storagePort: StoragePort
@@ -49,12 +42,12 @@ class HeartRateService: HeartRateServiceProtocol, BluetoothPortDelegate {
         self.bluetoothPort = bluetoothPort
         self.storagePort = storagePort
         
-        state = .disabled
+        state = BehaviorRelay(value: .disabled)
         self.bluetoothPort.delegate = self
     }
     
     func startSyncing() -> Result<Void, Error> {
-        switch state {
+        switch state.value {
         case .disabled:
             return .failure(.bluetoothIsDisabled)
         case .enabled:
@@ -75,13 +68,13 @@ class HeartRateService: HeartRateServiceProtocol, BluetoothPortDelegate {
         switch newState {
         case .disabled(let reason):
             print("Bluetooth disabled: \(reason)")
-            state = .disabled
+            state.accept(.disabled)
         case .enabled:
-            state = .enabled
+            state.accept(.enabled)
         case .peripheralConnected:
-            state = .discoveringSensorCharacteristics
+            state.accept(.discoveringSensorCharacteristics)
         case .characteristicDiscovered:
-            state = .syncingSensorData
+            state.accept(.syncingSensorData)
         }
     }
     
@@ -92,7 +85,7 @@ class HeartRateService: HeartRateServiceProtocol, BluetoothPortDelegate {
             case .failure(let error):
                 print("HeartRecord \(record) failed to be stored: \(error)")
             case .success:
-                self?.delegate?.hasRecorded(record: record)
+                self?.heartRate.onNext(record)
             }
         }
     }
