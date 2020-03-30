@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FirebaseApp.configure()
         
         let window = UIWindow()
-        window.rootViewController = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()
+        window.rootViewController = HeartRateViewController.build()
         window.makeKeyAndVisible()
         
         self.window = window

@@ -40,8 +40,6 @@ class HeartRatePresenter: HeartRateServiceDelegate {
         state = .notActive
     }
     
-    // MARK: HeartRatePresenterProtocol
-    
     func startSearch() {
         switch heartRateService.startSyncing() {
         case .failure(let error):
